@@ -112,7 +112,8 @@
         document.getElementById("tx_info_gas_used").innerHTML = data.gas_used;
         document.getElementById("tx_info_decode_data").innerHTML = data.data;
         document.getElementById("tx_info_encode_data").innerHTML = data.data_hex;
-        document.getElementById("tx_info_tx_hash").innerHTML = data.txhash;        document.getElementById("tx_info_tx_hash_link").setAttribute("href", api.explorer + "tx/" + data.txhash);
+        document.getElementById("tx_info_tx_hash").innerHTML = data.txhash;
+        document.getElementById("tx_info_tx_hash_link").setAttribute("href", api.explorer + "tx/" + data.txhash);
         document.querySelector(".btn_check_height").setAttribute("data-namespace", data.namespace_id);
         document.querySelector(".btn_check_height").setAttribute("data-height", data.height);
 
