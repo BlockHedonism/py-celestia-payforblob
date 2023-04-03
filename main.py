@@ -119,4 +119,4 @@ def index():
     return render_template('index.html', gas_limit=DEFAULT_GAS_LIMIT, fee=DEFAULT_FEE, node_url=DEFAULT_NODE_URL)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=4229)
+    app.run(debug=True)
