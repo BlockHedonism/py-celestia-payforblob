@@ -4,7 +4,7 @@
       submit_pfb: "/submit_pfb",
       node_status: "/node_status",
       height: "/height",
-      explorer: "https://testnet.mintscan.io/celestia-testnet/",
+      explorer: "https://testnet.mintscan.io/celestia-incentivized-testnet/",
     };
 
     // form selector
