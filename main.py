@@ -83,7 +83,7 @@ def submit_pfb():
         tx_data = data['tx_data'].encode('utf-8').hex()
 
         tx_submit = requests.post(
-            node_url + '/submit_pfd',
+            node_url + '/submit_pfb',
             json={'namespace_id': namespace_id, 'data': tx_data, 'gas_limit': int(data['tx_gas_limit']), "fee": int(data['tx_fee'])}
         )
         tx_submit_data = tx_submit.json()
@@ -104,6 +104,7 @@ def submit_pfb():
                 'gas_wanted': gas_wanted,
                 'gas_used': gas_used,
                 'height': height,
+                'code': tx_submit_data['code'],
                 'date': datetime.datetime.now()
                })
 
