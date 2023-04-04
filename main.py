@@ -53,7 +53,7 @@ def height():
         if not tx_height_data['height']:
             raise Exception('Context deadline exceeded')
 
-        return jsonify({"test": 12}), 200
+        return jsonify(tx_height_data), 200
 
     except Exception as e:
         logging.error(e)
