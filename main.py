@@ -104,7 +104,7 @@ def submit_pfb():
                 'gas_wanted': gas_wanted,
                 'gas_used': gas_used,
                 'height': height,
-                'code': tx_submit_data['code'],
+                'code': '200',
                 'date': datetime.datetime.now()
                })
 
@@ -120,4 +120,4 @@ def index():
     return render_template('index.html', gas_limit=DEFAULT_GAS_LIMIT, fee=DEFAULT_FEE, node_url=DEFAULT_NODE_URL)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug = False)
